@@ -78,9 +78,8 @@ body {
 
 .bottom-icons button {
     background-color: var(--color1);
-    height:3vw;
-    width:3.25vw;
     border-radius: 48%;
+    transform: translate(10px, 10px);
 }
 
 
