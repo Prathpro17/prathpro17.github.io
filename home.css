@@ -78,6 +78,8 @@ body {
 
 .bottom-icons button {
     background-color: var(--color1);
+    height:3vw;
+    width:3.25vw;
     border-radius: 48%;
 }
 
@@ -85,11 +87,14 @@ body {
 .bottom-icons button:hover {
     /* background-color: var(--color2-hover); */
     cursor: pointer;
+    background-color: var(--color1)
 }
 
-.bottom-icons button:hover ~ button {
+
+.bottom-icons button:hover button {
     background-color: black;
 }
+
 
 @keyframes fall {
     100% {
