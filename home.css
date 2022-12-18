@@ -1,0 +1,98 @@
+
+:root {
+    --color1: #ccc;
+    --color2: rgb(244, 238, 231);
+    --color2-hover: rgb(241, 218, 191);
+}
+
+
+body {
+    font-family: 'Salted Mocha';
+    width: 100%; height: 100%;
+    overflow: hidden;
+    background-color: rgb(18, 19, 18);
+    color: #fff;
+    /* text-shadow: 0 1px var(--color1),
+                0 2px var(--color1),
+                0 3px var(--color1),
+                0 4px var(--color1),
+                0 5px var(--color1),
+                0 6px 0 transparent,
+                0 7px transparent,
+                0 8px transparent,
+                0 9px transparent,
+                0 10px 10px rgba(0, 0, 0, 0.4); */
+}
+
+
+.unselectable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+
+.line-top {
+    width: 80vw;
+    border-bottom: 2px solid var(--color2);
+    transform: translate(10vw, 7vh);
+}
+.line-bottom {
+    width: 80vw;
+    border-bottom: 2px solid var(--color2);
+    transform: translate(10vw, 85vh);
+}
+
+.main-font {
+    position: absolute;
+    text-transform: lowercase;
+    height: 68vh;
+    width: 100vw;
+    font-size: 10vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-font span {
+    position: relative;
+    transform: translateY(-100vh);
+    animation: fall 1000ms ease forwards;
+}
+
+
+.bottom-icons {
+    position: relative;
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    transform: translate(25vw, 80vh);
+}
+
+
+.bottom-icons button {
+    background-color: var(--color1);
+    border-radius: 48%;
+}
+
+
+.bottom-icons button:hover {
+    /* background-color: var(--color2-hover); */
+    cursor: pointer;
+}
+
+.bottom-icons button:hover ~ button {
+    background-color: black;
+}
+
+@keyframes fall {
+    100% {
+        transform: translateY(0);
+    }
+}
