@@ -11,14 +11,15 @@
 
     <div class = "line-top"></div>
 
-    <div id = "main-font-div" class = "main-font unselectable" data-text = "very real name.">
+    <div id = "main-font-div" class = "main-font" data-text = "very real name.">
     </div>
     
-    <div id = "bottom-icons-div" class = "bottom-icons" contentEditable = "true">
-        <button onMouseOver = "buttonHover()">a</button>
-        <button onMouseOver = "buttonHover()">b</button>
-        <button onMouseOver = "buttonHover()">c</button>
-        <button onMouseOver = "buttonHover()">d</button>
+    <div id = "bottom-icons-div" class = "bottom-icons">
+        <button id = "bottom-btn-1" onMouseOver = "changeButtonColor(1)" onMouseOut = "resetButtonColor()">a</button>
+        <button id = "bottom-btn-2" onMouseOver = "changeButtonColor(2)" onMouseOut = "resetButtonColor()">b</button>
+        <button id = "bottom-btn-3" onMouseOver = "changeButtonColor(3)" onMouseOut = "resetButtonColor()">c</button>
+        <button id = "bottom-btn-4" onMouseOver = "changeButtonColor(4)" onMouseOut = "resetButtonColor()">d</button>
+        <button id = "bottom-btn-5" onMouseOver = "changeButtonColor(5)" onMouseOut = "resetButtonColor()">e</button>
     </div>
 
     <div class = "line-bottom"></div>
