@@ -34,7 +34,7 @@ body {
 .line-bottom {
     width: 80vw;
     border-bottom: 2px solid var(--color2);
-    transform: translate(10vw, 87vh);
+    transform: translate(10vw, 85vh);
 }
 
 .main-font {
@@ -68,11 +68,15 @@ body {
 
 .bottom-icons button {
     background-color: var(--color1);
-    border-radius: 48%;
     height: 3.5vh;
     width: 3.6vh;
+    border-radius: 48%;
     font-size: 1.6vh;
+    text-align: center;
     color: var(--background);
+    border: none;
+    margin-left: 0.25vw;
+    margin-right: 0.25vw;
 }
 
 
