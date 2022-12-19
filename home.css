@@ -2,7 +2,6 @@
 :root {
     --color1: #ccc;
     --color2: rgb(244, 238, 231);
-    --color2-hover: rgb(241, 218, 191);
 }
 
 
@@ -76,14 +75,7 @@ body {
 
 
 .bottom-icons button:hover {
-    /* background-color: var(--color2-hover); */
     cursor: pointer;
-    background-color: var(--color1)
-}
-
-
-.bottom-icons button:hover button {
-    background-color: black;
 }
 
 
