@@ -12,16 +12,6 @@ body {
     overflow: hidden;
     background-color: rgb(18, 19, 18);
     color: #fff;
-    /* text-shadow: 0 1px var(--color1),
-                0 2px var(--color1),
-                0 3px var(--color1),
-                0 4px var(--color1),
-                0 5px var(--color1),
-                0 6px 0 transparent,
-                0 7px transparent,
-                0 8px transparent,
-                0 9px transparent,
-                0 10px 10px rgba(0, 0, 0, 0.4); */
 }
 
 
