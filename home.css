@@ -39,12 +39,12 @@ body {
 .line-top {
     width: 80vw;
     border-bottom: 2px solid var(--color2);
-    transform: translate(10vw, 7vh);
+    transform: translate(10vw, 8vh);
 }
 .line-bottom {
     width: 80vw;
     border-bottom: 2px solid var(--color2);
-    transform: translate(10vw, 85vh);
+    transform: translate(10vw, 87vh);
 }
 
 .main-font {
@@ -79,7 +79,9 @@ body {
 .bottom-icons button {
     background-color: var(--color1);
     border-radius: 48%;
-    transform: translate(10px, 10px);
+    height: 3.5vh;
+    width: 3.6vh;
+    font-size: 1.6vh;
 }
 
 
