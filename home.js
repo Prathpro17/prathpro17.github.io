@@ -31,3 +31,8 @@ function resetButtonColor() {
         document.getElementById(`bottom-btn-${i}`).style.opacity = 1;
     }
 }
+
+
+function redirect(website) {
+    window.location.href = `http://www.${website}.com`
+}

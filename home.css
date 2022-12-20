@@ -7,7 +7,7 @@
 :root {
     --background: rgb(18, 19, 18);
     --color1: #ccc;
-    --color2: rgb(244, 238, 231);
+    --color2: #fff;
 }
 
 
@@ -16,7 +16,7 @@ body {
     width: 100%; height: 100%;
     overflow: hidden;
     background-color: var(--background);
-    color: #fff;
+    color: var(--color2);
     display: flex;
     justify-content: center;
 }
@@ -133,4 +133,26 @@ body {
     100% {
         transform: translateY(0);
     }
+}
+
+
+.icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2vh;
+}
+
+
+.discord {
+    background-image: url('assets/discord.png');
+    background-size: 3vh !important;
+}
+.facebook {
+    background-image: url('assets/facebook.png');
+}
+.instagram {
+    background-image: url('assets/instagram.png');
+}
+.twitter {
+    background-image: url('assets/twitter.png');
 }
