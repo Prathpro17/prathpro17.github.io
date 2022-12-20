@@ -17,6 +17,8 @@ body {
     overflow: hidden;
     background-color: var(--background);
     color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -32,14 +34,24 @@ body {
 
 
 .line-top {
-    width: 80vw;
-    border-bottom: 2px solid var(--color2);
-    transform: translate(10vw, 8vh);
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    transform: translateY(8vh);
+    animation: lines 1000ms forwards;
+    animation-delay: 2500ms;
 }
+
+
 .line-bottom {
-    width: 80vw;
-    border-bottom: 2px solid var(--color2);
-    transform: translate(10vw, 85vh);
+    width: 0;
+    height: 2px;
+    background: white;
+    position: absolute;
+    transform: translateY(88vh);
+    animation: lines 1000ms forwards;
+    animation-delay: 2500ms;
 }
 
 .main-font {
@@ -67,7 +79,7 @@ body {
     width: 50vw;
     align-items: center;
     justify-content: center;
-    transform: translate(25vw, 80vh);
+    transform: translateY(80vh);
 }
 
 
@@ -82,6 +94,7 @@ body {
     border: none;
     margin-left: 0.25vw;
     margin-right: 0.25vw;
+    transition: opacity 500ms;
 }
 
 
@@ -90,7 +103,33 @@ body {
 }
 
 
+.bottom-icons > div {
+    transform: translateY(-100vh);
+    animation: buttons 1000ms ease forwards;
+}
+
+
 @keyframes fall {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes lines {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80vw;
+    }
+}
+
+
+@keyframes buttons {
+    0% {
+        transform: translateY(-100vh);
+    }
     100% {
         transform: translateY(0);
     }
