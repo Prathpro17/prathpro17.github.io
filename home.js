@@ -10,7 +10,15 @@ for (let i = 0; i < divText.length; i++) {
 
 
 for (let i = 1; i < 6; i++) {
-    document.getElementById(`bottom-btn-${i}-div`).style.animationDelay = `${(i * 100) + 2700}ms`;
+    try {
+        document.getElementById(`bottom-btn-${i}-div`).style.animationDelay = `${(i * 100) + 2700}ms`;
+    }
+    catch(err) {
+        if (err.name == 'TypeError') {}
+        else {
+            console.log(`ERROR (catched): ${err}`)
+        }
+    }
 }
 
 
