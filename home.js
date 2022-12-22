@@ -132,3 +132,7 @@ function redirect(website) {
     window.location.href = `http://www.${website}.com`
 }
 
+
+
+
+init_cursor({});
