@@ -2,6 +2,7 @@
 
 <head>
     <link rel = "stylesheet" href = "home.css" />
+    <link href="pointer.css" rel="stylesheet">
 </head>
 
 <html>
@@ -9,55 +10,61 @@
     <title>braindamage</title>
     <link rel = "icon" href = "https://cdn3.emoji.gg/emojis/9946_sobbing.png" />
 
-    <div class = "line-top"></div>
+    <body>
+        <div class = "pointer-ring"></div>
+        <div class = "pointer-dot"></div>
 
-    <div id = "main-font-div" class = "main-font" data-text = "very real name.">
-    </div>
-    
-    <div id = "bottom-icons-div" class = "bottom-icons">
-        <div id = "bottom-btn-1-div">
-            <button
-                class = "icon instagram"
-                id = "bottom-btn-1"
-                onMouseOver = "changeButtonColor(1)"
-                onMouseOut = "resetButtonColor()"
-                onClick = "redirect('instagram')"
-            >
-            </button>
+        <div class = "line-top"></div>
+        
+        <div id = "main-font-div" class = "main-font unselectable" data-text = "very real name.">
         </div>
-        <div id = "bottom-btn-2-div">
-            <button
-                class = "icon twitter"
-                id = "bottom-btn-2"
-                onMouseOver = "changeButtonColor(2)"
-                onMouseOut = "resetButtonColor()"
-                onClick = "redirect('twitter')"
-            >
-            </button>
+        
+        <div id = "bottom-icons-div" class = "bottom-icons">
+            <div id = "bottom-btn-1-div">
+                <button
+                    class = "icon instagram"
+                    id = "bottom-btn-1"
+                    onMouseOver = "changeButtonColor(1)"
+                    onMouseOut = "resetButtonColor()"
+                    onClick = "redirect('instagram')"
+                >
+                </button>
+            </div>
+            <div id = "bottom-btn-2-div">
+                <button
+                    class = "icon twitter"
+                    id = "bottom-btn-2"
+                    onMouseOver = "changeButtonColor(2)"
+                    onMouseOut = "resetButtonColor()"
+                    onClick = "redirect('twitter')"
+                >
+                </button>
+            </div>
+            <div id = "bottom-btn-3-div">
+                <button
+                    class = "icon facebook"
+                    id = "bottom-btn-3"
+                    onMouseOver = "changeButtonColor(3)"
+                    onMouseOut = "resetButtonColor()"
+                    onClick = "redirect('facebook')"
+                > 
+                </button>
+            </div>
+            <div id = "bottom-btn-4-div">
+                <button
+                    class = "icon discord"
+                    id = "bottom-btn-4"
+                    onMouseOver = "changeButtonColor(4)"
+                    onMouseOut = "resetButtonColor()"
+                    onClick = "redirect('discord')"
+                > 
+                </button>
+            </div>
         </div>
-        <div id = "bottom-btn-3-div">
-            <button
-                class = "icon facebook"
-                id = "bottom-btn-3"
-                onMouseOver = "changeButtonColor(3)"
-                onMouseOut = "resetButtonColor()"
-                onClick = "redirect('facebook')"
-            > 
-            </button>
-        </div>
-        <div id = "bottom-btn-4-div">
-            <button
-                class = "icon discord"
-                id = "bottom-btn-4"
-                onMouseOver = "changeButtonColor(4)"
-                onMouseOut = "resetButtonColor()"
-                onClick = "redirect('discord')"
-            > 
-            </button>
-        </div>
-    </div>
 
-    <div class = "line-bottom"></div>
+        <div class = "line-bottom"></div>
+    </body>
 
     <script type = "text/javascript" src = "home.js"></script>
+    <script>init_cursor({});</script>
 </html>
