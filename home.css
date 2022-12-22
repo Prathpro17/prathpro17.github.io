@@ -8,6 +8,12 @@
     --background: rgb(18, 19, 18);
     --color1: #ccc;
     --color2: #fff;
+    --cursor-color: rgb(100, 217, 236);
+}
+
+
+* {
+    cursor: none !important;
 }
 
 
@@ -19,58 +25,41 @@ body {
     color: var(--color2);
     display: flex;
     justify-content: center;
-    margin: 0;
-    cursor: none;
-}
-
-h1, p , a {
-    color: #fff;
-}
-
-a {
-    border-bottom: 2px solid #fff;
-    padding: 10px 0;
-    margin-top: 25px;
 }
 
 
-
-.left, .right {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-    
-.right {
-    background: #fff;
-}
-
-.right a {
-    border-bottom: 2px solid #000;
-    }
-    
-.right h1, .right p, .right a {
-color: #000;
-}
-
-.cursor {
-    pointer-events: none;   
-}
-.cursor __ball {
-    position: fixed;
-    top: 0;
+.pointer-dot {
     left: 0;
-    mix-blend-mode: difference;
-    z-index: 1000;
+    top: 0;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border: 2px solid var(--cursor-color);
+    position: fixed;
+    border-radius: 100px;
+    z-index: 1001;
+    pointer-events: none;
+    transition: border-color 0.5s border 0.5s;
+    opacity: 0.75;
+    background-color: var(--cursor-color);
 }
 
-.cursor circle {
-    fill: #f7f8fa;
-}
 
+.pointer-ring {
+    left: 5px;
+    top: 5px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    padding: 10px;
+    border: 1px solid var(--cursor-color);
+    position: fixed;
+    border-radius: 100px;
+    z-index: 1002;
+    pointer-events: none;
+    transition: padding 10ms;
+    opacity: 0.75;
+}
 
 
 .unselectable {
@@ -207,3 +196,4 @@ color: #000;
 .twitter {
     background-image: url('assets/twitter.png');
 }
+
