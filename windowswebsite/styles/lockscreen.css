@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: 'Segoi UI Semibold';
+    src: url('../assets/Segoe-UI-Variable-Static-Text-Semibold.ttf')
+}
+
+
+body {
+    background-image: url('../assets/windows-spotlight-imgs/0079126a9c0bcde2b055aabf471ba22231e5c4c486ca451f06e56e74b956a4ba.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoi UI Semibold';
+    color: white;
+    overflow: hidden;
+}
+
+
+.unselectable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+
+.lockscreen-container {
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+
+.lockscreen-time {
+    font-size: 12vh;
+    margin-top: 10vh;
+    position: absolute;
+}
+
+
+.lockscreen-date {
+    font-size: 2.5vh;
+    margin-top: 25vh;
+}
+
+
+.lockscreen-animate {
+    animation: lockscreenClickAnimation 500ms ease forwards;
+}
+
+
+.lockscreen-btn {
+    z-index: 2;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    background-color: transparent;
+}
+
+
+@keyframes lockscreenClickAnimation {
+    100% {
+        transform: translateY(-100vh);
+    }
+}

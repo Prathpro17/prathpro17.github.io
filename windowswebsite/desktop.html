@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel = "stylesheet" href = "./styles/desktop.css" />
+    </head>
+
+    <body>
+        
+        <script>
+            function changeSearchImg(operation) {
+                var taskbarSearch = document.getElementById('taskbar-search');
+                if (operation == 'change') {
+                    taskbarSearch.src = './assets/icons/taskbar-search-hover.png';
+                }
+                else if (operation == 'reset') {
+                    taskbarSearch.src = './assets/icons/taskbar-search.png';
+                }
+            }
+        </script>
+
+        <div class = "taskbar">
+            <button>
+                <img id = "taskbar-start" src = "./assets/icons/taskbar-start.png">
+            </button>
+            <button
+                id = "taskbar-search-btn"
+                onMouseOver = "changeSearchImg('change');"
+                onMouseOut = "changeSearchImg('reset');"
+            >
+                <img id = "taskbar-search" src = "./assets/icons/taskbar-search.png">
+            </button>
+            <button>
+                <img id = "taskbar-brave" src = "./assets/icons/taskbar-brave.png">
+            </button>
+            <button>
+                <img id = "taskbar-explorer" src = "./assets/icons/taskbar-explorer.png">
+            </button>
+            <button>
+                <img id = "taskbar-spotify" src = "./assets/icons/taskbar-spotify.png">
+            </button>
+        </div>
+
+    </body>
+
+</html>

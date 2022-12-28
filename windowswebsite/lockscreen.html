@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link rel = "stylesheet" href = "./styles/lockscreen.css" />
+    </head>
+
+    <body>
+        <!--
+            <script type = "text/javascript" href = "./scripts/lockscreen.js"></script>
+        -->
+        <script>
+            function animateLockscreen() {
+                var lockscreen = document.getElementById('lockscreen-container');
+                lockscreen.style.animation = 'lockscreenClickAnimation 500ms ease forwards';
+            }
+        </script>
+
+        <button class = "lockscreen-btn" onClick = "animateLockscreen()"></button>
+
+        <div id = "lockscreen-container" class = "lockscreen-container">
+            <div class = "lockscreen-time unselectable">
+                13:34
+            </div>
+            <div class = "lockscreen-date unselectable">
+                Tuesday, 27 December
+            </div>
+        </div>
+
+    </body>
+
+</html>

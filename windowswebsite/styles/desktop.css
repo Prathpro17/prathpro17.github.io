@@ -1,0 +1,83 @@
+
+body {
+    background-image: url('../assets/desktop-wallpaper-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoi UI Semibold';
+    color: white;
+    overflow: hidden;
+}
+
+
+.taskbar {
+    position: absolute;
+    background-color: #162630;
+    height: 48px;
+    width: 100%;
+    bottom: 0px;
+    border-top: 1px solid #3a444a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+#taskbar-start {
+    height: 23px;
+    width: 23px;
+}
+#taskbar-search {
+    height: 32px;
+    width: 100px;
+}
+#taskbar-brave {
+    margin-top: 4px;
+    height: 32px;
+    width: 22px;
+}
+#taskbar-explorer {
+    margin-top: 4px;
+    height: 30px;
+    width: 24px;
+}
+#taskbar-spotify {
+    margin-top: -4px;
+    height: 23px;
+    width: 23px;
+}
+*/
+
+.taskbar button {
+    background-color: transparent;
+    border: 0;
+    padding: 0px;
+    height: 42px;
+    padding: 0 9px 0 9px;
+    bottom: 2px;
+    border-radius: 4px;
+    align-items: center;
+}
+.taskbar button:hover {
+    background-color: rgba(128, 128, 128, 0.167);
+}
+
+#taskbar-search-btn:hover {
+    background-color: transparent;
+}
+#taskbar-start {
+    padding-top: 3px;
+}
+#taskbar-search {
+    padding-top: 2px;
+}
+#taskbar-brave {
+    padding-top: 5px;
+}
+#taskbar-explorer {
+    padding-top: 5px;
+}
+#taskbar-spotify {
+    transform: translateY(-1px);
+}
